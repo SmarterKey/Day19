@@ -21,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //below sets mapView delegate to show users location...This can be done without coding in the storyboard attribute properties of the mapview
+    self.mapView.showsUserLocation = YES;
 }
 
 - (void)viewDidUnload
