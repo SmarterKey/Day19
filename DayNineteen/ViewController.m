@@ -13,6 +13,9 @@
 @end
 
 @implementation ViewController
+@synthesize lblLongitude;
+@synthesize lblLatitude;
+@synthesize mapView;
 
 - (void)viewDidLoad
 {
@@ -22,6 +25,9 @@
 
 - (void)viewDidUnload
 {
+    [self setLblLongitude:nil];
+    [self setLblLatitude:nil];
+    [self setMapView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
